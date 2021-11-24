@@ -1,11 +1,11 @@
 package main
 
 import (
-	// "./src/chapter_one"
-	// "./src/chapter_two"
-	// "./src/chapter_three"
-	// "./src/chapter_four"
-	"./src/chapter_five"
+	// "./chapter/chapter_one"
+	// "./chapter/chapter_two"
+	// "./chapter/chapter_three"
+	// "./chapter/chapter_four"
+	"./chapter"
 )
 
 func main(){
@@ -17,7 +17,8 @@ func main(){
 	// chapter_three.Type_practice()
 	// chapter_four.For_practice()
 	// chapter_four.For_range_practice()
-	chapter_five.Condition_practice()
+	// chapter_five.Condition_practice()
+	chapter.Control_practice()
 
 	
 }
