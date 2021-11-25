@@ -1,8 +1,8 @@
-package chapter
+package practice
 
 import "fmt"
 
-func Var_practice(){
+func VarPractice(){
 	var a string = "string init"
 	fmt.Println(a)
 	

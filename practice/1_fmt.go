@@ -1,8 +1,8 @@
-package chapter
+package practice
 
 import "fmt"
 
-func Fmt_practice(){
+func FmtPractice(){
     fmt.Print("Hello goorm!\n")
     
 	fmt.Println("Hello goorm!")

@@ -1,8 +1,8 @@
-package chapter
+package practice
 
 import "fmt"
 
-func Calculate_practice(){
+func CalculatePractice(){
 	fmt.Println("13 == 13 : ", 13 == 13)
 	fmt.Println("13 == 23 : ", 13 == 23)
 	fmt.Println("13 != 13 : ", 13 != 13)

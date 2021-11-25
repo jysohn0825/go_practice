@@ -1,8 +1,8 @@
-package chapter
+package practice
 
 import "fmt"
 
-func Condition_practice(){
+func ConditionPractice(){
 	
 	num := 3
 	
