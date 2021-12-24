@@ -1,0 +1,102 @@
+basePath: /api
+definitions:
+  models.Book:
+    properties:
+      author:
+        type: string
+      id:
+        type: integer
+      title:
+        type: string
+    type: object
+host: localhost
+info:
+  contact:
+    email: jy.son@konai.com
+    name: jy.son toy project API
+  title: Book API
+  version: "1.0"
+paths:
+  /book:
+    delete:
+      consumes:
+      - application/json
+      description: delete a book
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            type: boolean
+      summary: delete a book
+      tags:
+      - book
+    patch:
+      consumes:
+      - application/json
+      description: Update a book
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/models.Book'
+      summary: Update a book
+      tags:
+      - book
+    post:
+      consumes:
+      - application/json
+      description: Create new book
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/models.Book'
+      summary: Create a book
+      tags:
+      - book
+  /book/:id:
+    get:
+      consumes:
+      - application/json
+      description: Find a book by ID
+      operationId: get-string-by-int
+      parameters:
+      - description: Book Id
+        in: path
+        name: id
+        required: true
+        type: string
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/models.Book'
+      summary: Find book
+      tags:
+      - book
+  /books:
+    get:
+      consumes:
+      - application/json
+      description: Find all books
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            items:
+              $ref: '#/definitions/models.Book'
+            type: array
+      summary: Find all books
+      tags:
+      - book
+swagger: "2.0"
